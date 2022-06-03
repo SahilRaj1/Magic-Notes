@@ -1,0 +1,15 @@
+/* Title of the page */
+.title {
+    text-align: center;
+    color: #28a745;
+}
+
+.title:hover {
+    color: #007bff;
+    cursor: default;
+}
+
+/* Changes in navbar */
+.navbar-brand {
+    color: #28a745;
+}
