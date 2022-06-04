@@ -1,4 +1,4 @@
-console.log("Magic Notes");
+// console.log("Magic Notes");
 showNotes();
 
 let addBtn = document.getElementById("addbtn");
@@ -79,3 +79,21 @@ function deleteNote(index) {
     localStorage.setItem("notes", JSON.stringify(notesObj));
     showNotes();
 }
+
+search = document.getElementById("searchTxt");
+search.addEventListener("input", function(e){
+
+    let inputVal = search.value.toLowerCase();
+    // console.log(inputVal);
+
+    let myNotes = document.getElementsByClassName("noteCard")
+    Array.from(myNotes).forEach(function(element) {
+    
+        let cardTxt = element.getElementsByTagName("p")[0].innerText.toLowerCase();
+        if (cardTxt.includes(inputVal)) {
+            element.style.display = "block";
+        } else {
+            element.style.display = "none";
+        }
+    });
+});
