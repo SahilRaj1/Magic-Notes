@@ -14,9 +14,13 @@
     color: #28a745;
 }
 
-/* notes */
-#notes {
-    /* padding: 2px 100px 2px; */
-    text-align: center;
-    margin: auto;
+h5 {
+    text-align: left;
 }
+
+/* notes */
+/* #notes { */
+    /* padding: 2px 100px 2px; */
+    /* text-align: center; */
+    /* margin: auto; */
+/* } */
